@@ -77,7 +77,7 @@ VSCode・Cursor以外の人はすみません
 ---
 
 ### 🏃‍♂️ Marpの始め方 #5
-## PDFとしてエクスポート
+## pptxとしてエクスポート
 ![w:700](./images/export-slide.png)
 
 <small>💡 コマンドパレット検索: `Marp: Export Slide Deck`</small>
