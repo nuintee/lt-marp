@@ -89,6 +89,44 @@ VSCode・Cursor以外の人はすみません
 
 ---
 
+# 👨‍💻 ちょっと技術的な話
+
+---
+
+### 🌐 オンラインで公開するなら
+# Github Pages + actions
+git管理との相性・情報の多さ
+
+---
+
+### 🛠️ 使用したaction
+1. **MarpをHTML出力:**
+  - [KoharaKazuya/marp-cli-action@v4](https://github.com/KoharaKazuya/marp-cli-action)
+
+2. **生成したHTMLのアップロード**
+  - [actions/upload-pages-artifact@v3](https://github.com/actions/upload-pages-artifact)
+
+3. **Github Pagesへのデプロイ**
+  - [actions/deploy-pages@v4](https://github.com/actions/deploy-pages)
+---
+
+# 🌀 公開で少しハマったところ
+1. [permission](https://zenn.dev/not75743/scraps/926f2693809744)の設定が分からない
+2. [Workflowの権限不足](https://docs.github.com/ja/actions/security-for-github-actions/security-guides/automatic-token-authentication#using-the-github_token-in-a-workflow)
+3. デプロイ後に絵文字が表示されない
+
+---
+
+# 👍 調べたらすぐ情報出た
+ちなみに絵文字は action のバージョンが原因
+
+---
+
+### ⏰ 少し詰まったけど...
+## Marp x actionsは便利
+
+---
+
 ## ⚡️ 社内LTをやり過ごすテクニック 
 ## (本題)
 
@@ -114,7 +152,7 @@ VSCode・Cursor以外の人はすみません
 
 ### ⚡️ 社内LTをやり過ごすテクニック #4
 # 時間稼ぎ
-余計なスライドでかさ増し
+たくさん寄り道しましょう
 
 ---
 
