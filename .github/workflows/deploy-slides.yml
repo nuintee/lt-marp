@@ -1,3 +1,4 @@
+# @see marp-cli - https://github.com/KoharaKazuya/marp-cli-action/blob/main/README.ja.md
 # @see https://www.lyricrime.com/posts/marp-slides/
 name: Publish GitHub Pages
 on:
@@ -12,6 +13,9 @@ jobs:
         actions: write
         checks: write
         contents: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -19,6 +23,9 @@ jobs:
 
       - name: Convert Markdown into HTML and PDF
         uses: KoharaKazuya/marp-cli-action@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
