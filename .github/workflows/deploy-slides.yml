@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Convert Markdown into HTML and PDF
-        uses: KoharaKazuya/marp-cli-action@v2
+        uses: KoharaKazuya/marp-cli-action@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
