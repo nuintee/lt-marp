@@ -49,6 +49,7 @@ VSCode・Cursor以外の人はすみません
 
 ### 🏃‍♂️ Marpの始め方 #2
 ## マークダウンファイルを作成
+`index.md` や `slide.md`など
 
 ---
 
@@ -76,7 +77,7 @@ VSCode・Cursor以外の人はすみません
 
 ---
 
-### 🏃‍♂️ Marpの始め方 #5
+### 🏃‍♂️ Marpの始め方 #6
 ## pptxとしてエクスポート
 ![w:700](./images/export-slide.png)
 
